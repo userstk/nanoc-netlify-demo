@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>A Brand New Nanoc Site - <%= @item[:title] %></title>
+    <link rel="stylesheet" href="/stylesheet.css">
+
+    <!-- you don't need to keep this, but it's cool for stats! -->
+    <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
+  </head>
+  <body>
+    <div id="main">
+      <%= yield %>
+    </div>
+    <div id="sidebar">
+      <h2>netlify</h2>
+      <ul>
+        <li><a href="https://www.netlify.com/">Home</a></li>
+        <li><a href="https://www.netlify.com/documentation/">Documentation</a></li>
+        <li><a href="https://www.netlify.com/Blog/">Blog</a></li>
+      </ul>
+      <h2>Nanoc</h2>
+      <ul>
+        <li><a href="http://nanoc.ws//">Home</a></li>
+        <li><a href="http://nanoc.ws/doc/">Documentation</a></li>
+        <li><a href="http://nanoc.ws/community/">Community</a></li>
+      </ul>
+      <h2>GitHub</h2>
+      <ul>
+        <li><a href="https://github.com/">Home</a></li>
+        <li><a href="https://help.github.com/">Help</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
